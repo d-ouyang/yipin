@@ -1,0 +1,51 @@
+<view class='container'>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="section section_gap">
+      <view class="section__title">年龄: 岁</view>
+      <slider name="age" show-value min='10' max='60' bindchange='settingAge' value='{{theAge}}'></slider>
+    </view>
+    <view class="section section_gap">
+      <view class="section__title">身高: cm</view>
+      <slider name="height" show-value min='150' max='210' step='5' value='{{theHeight}}' bindchange='settingHeight'></slider>
+    </view>
+    <view class="section section_gap">
+      <view class="section__title">体重: kg</view>
+      <slider name="weight" show-value bindchange='settingWeight' value='{{theWeight}}' min='40' max='130'></slider>
+    </view>
+    <view class="section section_gap">
+      <view class="section__title">体型</view>
+      <picker bindchange='settingBodyType' range='{{bodyTypeList}}' name='bodyType' range-key='value' value='{{key}}'>
+        <view class="picker">
+          选择体型：{{bodyTypeList[bodyIndex].value}}
+        </view>
+      </picker>
+    </view>
+    <view class="section section_gap">
+      <view class="section__title">肤色</view>
+      <picker bindchange='settingSkinColor' range='{{skinColorList}}' name='skinColor' range-key='value' value='{{key}}'>
+        <view class="picker">
+          选择肤色：{{skinColorList[skinsIndex].value}}
+        </view>
+      </picker>
+    </view>
+    <view class="section section_gap">
+      <view class="section__title">穿衣风格</view>
+      <picker bindchange='settingStyle' range='{{styleList}}' name='style' range-key='value' value='{{key}}'>
+        <view class="picker">
+          选择穿衣风格：{{styleList[styleIndex].value}}
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <view class="section__title">职业</view>
+      <input name="profession" placeholder="请输入您的职业" value="{{profession}}" />
+    </view>
+    <view class='section'>
+      <view class="section__title" bindtap='uploadImage'>上传图片</view>
+      <image mode='aspectFit' wx:if='{{src != ""}}' src='{{src}}'></image>
+    </view>
+    <view class="btn-area">
+      <button form-type="submit" type='primary'>确定</button>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,1 @@
+<d-user-info bindlogin='bindLogin' isLogin="{{isLogin}}"/>

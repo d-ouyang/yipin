@@ -1,0 +1,40 @@
+<wxs src='../../../utils/filter.wxs' module='filter' />
+
+<view class='container'>
+  <view class='banner'>
+    <swiper 
+      indicator-dots='{{indicatorDots}}'
+      autoplay='{{autoplay}}'
+      circular='{{circular}}'
+    >
+      <block wx:for='{{bannerImages}}' wx:key='index'>
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view wx:if='{{!readOnly}}'>
+      <d-like class='collect-icon' data-id='{{goodsInfo.goodsId}}' bindcollect='bindCollect' isLike='{{goodsInfo.isLike}}' width="64rpx" height="64rpx" />
+    </view>
+  </view>
+  <view class='info'>
+    <view class='base-info'>
+      <view class='title'>{{goodsInfo.goodsName}}</view>
+      <view class='price'>{{filter.returnPrice(goodsInfo.goodsPrice)}}</view>
+      <view class='desc'>
+        <block wx:for='{{goodsDescArr}}' wx:key='{{index}}'>
+          <view class='desc-item'>{{item}}</view>
+        </block>
+      </view>
+    </view>
+    <view class='image-info'>
+      <block wx:for='{{goodsInfo.goodsInfos}}' wx:key='index'>
+        <image class='image-info-item' src='{{item}}'></image>
+      </block>
+    </view>
+  </view>
+  <view class='carts-btns'>
+    <view class='add-carts' bindtap='addToCarts'>加入购物车</view>
+    <view class='goto-carts' bindtap='goToCarts'>前往购物车</view>
+  </view>
+</view>

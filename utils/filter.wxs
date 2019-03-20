@@ -1,0 +1,49 @@
+var returnMonth = function (index) {
+  switch (index) {
+    case 0:
+      return '01 月'
+      break;
+    case 1:
+      return '02 月'
+      break;
+    case 2:
+      return '03 月'
+      break;
+    case 3:
+      return '04 月'
+      break;
+    case 4:
+      return '05 月'
+      break;
+    case 5:
+      return '06 月'
+      break;
+    case 6:
+      return '07 月'
+      break;
+    case 7:
+      return '08 月'
+      break;
+    case 8:
+      return '09 月'
+      break;
+    case 9:
+      return '10 月'
+      break;
+    case 10:
+      return '11 月'
+      break;
+    case 11:
+      return '12 月'
+      break;
+  }
+}
+
+var returnPrice = function(price) {
+  return '￥' + price + '.00'
+}
+
+module.exports = {
+  returnMonth: returnMonth,
+  returnPrice: returnPrice
+}

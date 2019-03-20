@@ -1,0 +1,31 @@
+{
+  "pages": [
+    "pages/questions/index",
+    "pages/home/index",
+    "pages/mall/index",
+    "pages/solutions/index",
+    "pages/personal/index",
+    "pages/common/goodsDetail/index",
+    "pages/common/collection/index",
+    "pages/solutions/solutionDetail/index",
+    "pages/test/index",
+    "pages/shopping/index",
+    "pages/male/index",
+    "pages/male/newTryst/index",
+    "pages/male/trends/index",
+    "pages/male/lookSolution/index",
+    "pages/male/information/index",
+    "pages/common/maleInfo/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "衣品",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "衣品需要获取你的地理位置"
+    }
+  }
+}

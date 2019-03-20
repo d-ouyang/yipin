@@ -1,0 +1,9 @@
+<view class='container'>
+  <view class='solutions-detail'>
+    <block wx:for='{{solutionDetail}}' wx:key='{{item.key}}'>
+      <image bindtap='goTogoodsDetail' data-id='{{item.goodsId}}' src='{{item.goodsPicUrl}}'></image>
+    </block>
+    <view class='add'><text>+</text></view>
+  </view>
+  <view class='store' bindtap='storeSolution'>{{canEdit ? "提交方案" : "编辑方案"}}</view>
+</view>

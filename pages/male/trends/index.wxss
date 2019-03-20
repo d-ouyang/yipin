@@ -1,0 +1,43 @@
+.container {
+  padding: 40rpx 0 100rpx;
+}
+
+.trends-list {
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  background: #fff;
+}
+
+.item {
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+  font-size: 28rpx;
+  border-bottom: 2rpx solid #eee;
+  justify-content: space-between;
+}
+
+.item-info {
+  display: flex;
+  height: 100rpx;
+  align-items: center;
+}
+
+.avatar {
+  width: 64rpx;
+  height: 64rpx;
+  border-radius: 50%;
+  margin-right: 24rpx;
+}
+
+.check {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.nothing {
+  line-height: 140rpx;
+  font-size: 32rpx;
+  color: #BDC3CB;
+  text-align: center;
+}

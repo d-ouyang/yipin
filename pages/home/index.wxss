@@ -1,0 +1,76 @@
+.container {
+  padding: 40rpx;
+}
+
+.tryst-list {
+  box-sizing: border-box;
+  padding-bottom: 100rpx;
+}
+
+.item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 32rpx;
+}
+
+.avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 30rpx;
+}
+
+.item-box {
+  box-sizing: border-box;
+  padding: 40rpx;
+  border-radius: 8rpx;
+  background: #fff;
+  width: 560rpx;
+  height: 300rpx;
+  justify-content: space-between;
+}
+
+.item-title {
+  margin-bottom: 12rpx;
+  font-weight: bold;
+  font-size: 32rpx;
+}
+
+.item-content {
+  font-size: 28rpx;
+  margin-bottom: 40rpx;
+}
+
+.item-function {
+  width: 100%;
+  text-align: right;
+}
+
+.refresh {
+  position: fixed;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 28rpx;
+  right: 40rpx;
+  bottom: 40rpx;
+  border-radius: 50%;
+  background-color: #1A1A1A;
+  color: #fff;
+}
+
+.male-entrence {
+  position: fixed;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 28rpx;
+  left: 40rpx;
+  bottom: 40rpx;
+  border-radius: 50%;
+  background-color: #1A1A1A;
+  color: #fff;
+}

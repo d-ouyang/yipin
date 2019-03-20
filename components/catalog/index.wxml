@@ -1,0 +1,4 @@
+<view bindtap='getGoodsListById' data-id='{{item.catalogId}}' data-title='{{item.catalogName}}' class='catalog-item'>
+  <image src='{{item.catalogLogo}}'></image>
+  <text>{{item.catalogName}}</text>
+</view>

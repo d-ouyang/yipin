@@ -1,0 +1,20 @@
+<view class='container'>
+  <view class='tryst-list'>
+    <block wx:for='{{trystList}}' wx:key='index'>
+      <view class='tryst-item' bindtap='lookTrends' data-item='{{item}}'>
+        <view class='item-box'>
+          <view class='item-title'>{{item.title}}</view>
+          <view class='item-content'>{{item.content}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class='female-entrence' bindtap='femaleEntrence'>女</view>
+
+  <navigator class='setting' url='/pages/male/information/index'>S</navigator>
+
+  <view bindtap='createNewTryst' class='submit-solution'>
+    发布
+  </view>
+</view>

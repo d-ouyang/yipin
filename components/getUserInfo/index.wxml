@@ -1,0 +1,15 @@
+<view class='container'>
+  <view wx:if='{{!isLogin}}' class='modal-mask'>
+      <view wx:if='{{canLogin}}' class='modal-wrapper'>
+        <view class='modal-box'>
+          <view class='modal-title'>用户未登录</view>
+          <view class='modal-content'>
+            <text>如需要正常使用小程序功能，请先授权登录</text>
+          </view>
+        </view>
+        <view class='modal-btn-wrapper'>
+          <button open-type='getUserInfo' bindgetuserinfo='getUserInfo'>授权登录</button>
+        </view>
+      </view>
+    </view>
+</view>

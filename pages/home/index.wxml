@@ -1,0 +1,28 @@
+<view class='container'>
+  <block wx:for='{{trystList}}' wx:key='id'>
+    <view class='item'>
+      <image bindtap='lookMaleDetail' class='avatar' src='{{item.avatar}}'></image>
+      <view class='item-box'>
+        <view>
+          <view class='item-title'>
+            {{item.title}}
+          </view>
+          <view class='item-content'>
+            {{item.content}}
+          </view>
+        </view>
+        <view class='item-function'>
+          <button style='margin-right:12rpx;' size='mini' open-type='share'>分享</button>
+          <button wx:if='{{item.status == -99}}' size='mini' type='primary' catchtap='catchGrab' data-item='{{item}}'>抢</button>
+          <button wx:elif='{{item.status == -1}}' size='mini' type='primary' catchtap='catchGrab' data-item='{{item}}'>未被选中</button>
+          <button wx:elif='{{item.status == 0}}' size='mini' type='primary' catchtap='catchGrab' data-item='{{item}}'>已参与</button>
+          <button wx:elif='{{item.status == 1}}' size='mini' type='primary' catchtap='catchGrab' data-item='{{item}}'>被选中</button>
+          <button wx:elif='{{item.status == 2}}' size='mini' type='primary' catchtap='catchGrab' data-item='{{item}}'>MVP</button>
+        </view>
+      </view>
+    </view>
+  </block>
+
+  <view class='refresh' bindtap='refresh'>刷新</view>
+  <view class='male-entrence' bindtap='maleEntrence'>男</view>
+</view>

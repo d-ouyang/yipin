@@ -1,0 +1,27 @@
+<view class='container'>
+  <view class='mask'>
+    <view class='speech-wrapper error-common {{sliderBool ? "left_50" : ""}}'>
+      <view class='speech-container'>
+        <view class='speech-title'>录制你的专属语音</view>
+        <view class='speech-dec'>
+          <text style='line-height:1.5'>* 录音时请长按录制，一次至多录音 60 秒</text>
+        </view>
+        <view class='record-wrapper'>
+          <image wx:if='{{!recordIsOver}}' src='./image/microphone@2x.png'></image>
+          <image wx:if='{{recordIsOver && !isPlaying}}' src='./image/stop@2x.png' bindtap='playVoice'></image>
+          <image wx:if='{{isPlaying}}' src='./image/play@2x.png' bindtap='stopVoice'></image>
+        </view>
+        <view class='record-btn-wrapper'>
+          <button wx:if='{{!recordIsOver}}' class='{{isRecording ? "recording" : ""}}' bindtouchstart='startRecord' bindtouchend='stopRecord' bindtouchcancel='stopRecord'>{{isRecording ? "松手完成录制" : "开始录音"}}</button>
+          <button wx:else class='{{isRecording ? "recording" : ""}}' bindtouchstart='startRecord' bindtouchend='stopRecord' bindtouchcancel='stopRecord'>{{isRecording ? "松手完成录制" : "重新录制"}}</button>
+        </view>
+        <view class='btn-wrapper'>
+          <button catchtap='openSetting' class='sub-btn'>确认提交</button>
+        </view>
+      </view>
+      <view class='close-wrapper' catchtap='cancleError'>
+        <icon type='cancel' size='23' color='#231916'></icon>
+      </view>
+    </view>
+  </view>
+</view>

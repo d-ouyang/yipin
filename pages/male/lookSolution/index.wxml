@@ -1,0 +1,21 @@
+<view class='container'>
+  <view class='pulldown'>
+    下拉刷新可查看方案状态
+  </view>
+  <view wx:if='{{!solutions.length}}' class='waiting'>
+    候选人正在选方案，请耐心等待...
+  </view>
+  <view wx:else class='solution-list'>
+    <view bindtap='setMVP' data-item='{{item}}' wx:for='{{solutions}}' wx:key='{{item.id}}' class='solution'>
+      <view class='solution-name'>
+        {{item.name}}
+      </view>
+      <view class='solution-desc'>
+        {{item.description}}
+      </view>
+      <view class='solution-time'>
+        {{item.createdTime}}
+      </view>
+    </view>
+  </view>
+</view>

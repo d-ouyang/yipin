@@ -1,0 +1,15 @@
+<wxs src='../../utils/filter.wxs' module='filter' />
+
+<view bindtap='getGoodsDetail' data-id='{{item.goodsId}}' class='goods-item'>
+  <image src='{{item.goodsPicUrl}}'>
+    <!-- <view wx:if='{{!readOnly}}'>
+      <d-like class='collect-icon' data-id='{{item.goodsId}}' data-index='{{index}}' bindcollect='bindCollect' isLike='{{item.like}}' width="48rpx" height="48rpx" />
+    </view> -->
+    
+  </image>
+  <view class='item-info'>
+    <view class='item-title no-wrap'>{{item.goodsName}}</view>
+    <slot name='select'></slot>
+    <view class='item-price'>{{filter.returnPrice(item.goodsPrice)}}</view>
+  </view>
+</view>

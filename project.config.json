@@ -1,0 +1,115 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.1",
+	"appid": "wx1ff9f89cf7dbdf72",
+	"projectname": "yipin",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 10,
+			"list": [
+				{
+					"id": -1,
+					"name": "商城",
+					"pathName": "pages/mall/index",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "goodsDetail",
+					"pathName": "pages/common/goodsDetail/index",
+					"query": "id=2"
+				},
+				{
+					"id": 2,
+					"name": "collection",
+					"pathName": "pages/common/collection/index",
+					"query": "editType=add"
+				},
+				{
+					"id": -1,
+					"name": "solutions",
+					"pathName": "pages/solutions/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "solutionDetail",
+					"pathName": "pages/solutions/solutionDetail/index",
+					"query": "id=6"
+				},
+				{
+					"id": -1,
+					"name": "测试",
+					"pathName": "pages/test/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "personal",
+					"pathName": "pages/personal/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "shopping",
+					"pathName": "pages/shopping/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 8,
+					"name": "maleDemo",
+					"pathName": "pages/male/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "newTryst",
+					"pathName": "pages/male/newTryst/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "男性基本信息",
+					"pathName": "pages/common/maleInfo/index",
+					"scene": null
+				}
+			]
+		}
+	}
+}

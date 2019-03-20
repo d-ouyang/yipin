@@ -1,0 +1,3 @@
+<image style='width:{{width}};height:{{height}}' catchtap='collect' src='{{isLike ? likeSrc : unlikeSrc}}'></image>
+
+

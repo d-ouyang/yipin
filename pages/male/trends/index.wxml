@@ -1,0 +1,18 @@
+<view class='container'>
+  <view class='trends-list'>
+    <block wx:for='{{trends}}' wx:key='index'>
+      <view class='item' data-index='{{index}}' data-item='{{item}}' bindtap='bindSelected'>
+        <view class='item-info'>
+          <image class='avatar' src='{{item.avatar}}'></image>
+          <view class='nickname'>{{item.nickName}}</view>
+        </view>
+        <image class='check' wx:if='{{!item.isCheck}}' src='/resource/icon/unchecked.png'></image>
+        <image class='check' wx:else src='/resource/icon/checked.png'></image>
+      </view>
+    </block>
+  </view>
+
+  <view class='nothing'>
+    暂无人抢单
+  </view>
+</view>

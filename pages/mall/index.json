@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "d-catalog": "/components/catalog/index",
+    "d-goods": "/components/goods/index"
+  }
+}

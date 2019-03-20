@@ -1,0 +1,52 @@
+<view class='container'>
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <!-- <view class="section section_gap">
+      <view class="section__title">switch</view>
+      <switch name="switch" />
+    </view> -->
+    <!-- <view class="section section_gap">
+      <view class="section__title">slider</view>
+      <slider name="slider" show-value></slider>
+    </view> -->
+
+    <view class="section">
+      <view class="section__title">需求标题</view>
+      <input name="input" placeholder="需求标题" />
+    </view>
+    <!-- <view class="section section_gap">
+      <view class="section__title">radio</view>
+      <radio-group name="radio-group">
+        <label>
+          <radio value="radio1" />
+          radio1
+        </label>
+        <label>
+          <radio value="radio2" />
+          radio2
+        </label>
+      </radio-group>
+    </view> -->
+    <!-- <view class="section section_gap">
+      <view class="section__title">checkbox</view>
+      <checkbox-group name="checkbox">
+        <label>
+          <checkbox value="checkbox1" />
+          checkbox1
+        </label>
+        <label>
+          <checkbox value="checkbox2" />
+          checkbox2
+        </label>
+      </checkbox-group>
+    </view> -->
+
+    <view class='section'>
+      <view class="section__title">需求内容</view>
+      <textarea name='textarea' bindblur="bindTextAreaBlur" auto-height placeholder="需求内容" />
+    </view>
+    <view class="btn-area">
+      <button form-type="submit">发布</button>
+      <!-- <button form-type="reset">Reset</button> -->
+    </view>
+  </form>
+</view>

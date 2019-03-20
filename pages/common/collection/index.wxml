@@ -1,0 +1,27 @@
+<view class='container' style='padding-bottom:{{padding}}rpx'>
+  <view class='catalog-list'>
+    <block wx:for='{{catalogList}}' wx:key='{{item.catalogId}}'>
+      <d-catalog bindgetGoodsListById='getGoodsListById' item="{{item}}"></d-catalog>
+    </block>
+  </view>
+
+  <view class='goods-list'>
+    <block wx:for='{{goodsList}}' wx:key='{{item.goodsId}}' >
+      <d-goods bindgetGoodsDetail='getGoodsDetail' item='{{item}}' index="{{index}}" readOnly='{{readOnly}}'>
+        <image style='width:48rpx;height:48rpx;position:absolute;right:20rpx;top:30rpx;' src='{{item.selected ? selectedSrc : unselectedSrc}}' catchtap='catchSelect' data-item='{{item}}' slot='select' />
+      </d-goods>
+    </block>
+  </view>
+
+  <view wx:if='{{!goodsList.length}}' class='no-data'>暂无相关收藏</view>
+</view>
+
+<view class='bottom-container'>
+  <scroll-view wx:if='{{selectedArr.length}}' class='selected-list' scroll-x='{{scrollX}}' style="width: 100%">
+    <block wx:for='{{selectedArr}}' wx:key='{{item.goodsId}}'>
+      <image bindtap='tapItemImg' class='selected-item' data-index='{{index}}' src='{{item.goodsPicUrl}}'></image>
+    </block>
+  </scroll-view>
+  <view class='operation' bindtap='operateGoods'>完成</view>
+  <view class='operation-delete'>删除</view>
+</view>

@@ -1,0 +1,25 @@
+<view class='container'>
+  <view class='solution-list'>
+    <block wx:for='{{solutions}}' wx:key='{{item.solutionId}}'>
+      <view class='solution-item' data-id='{{item.solutionId}}' bindtap='goToDetail' bindlongtap='editSolution'>
+        <view class='solution-imgs'>
+          <block wx:for='{{item.solutionPicUrls}}' wx:for-item='imgItem' wx:for-index='idx' wx:key='idx'>
+            <image src='{{imgItem}}'></image>
+          </block>
+          <!-- <view wx:if='{{item.solutionPicUrls.length < 4}}' class='add'>
+            <text>+</text>
+          </view> -->
+        </view>
+        <view class='solution-info'>
+          <text class='name'>{{item.solutionName}}</text>
+          <text class='price'>{{item.solutionPrice}}</text>
+        </view>
+        <view class='solution-edit'>
+          <image src='/resource/icon/delete.png' data-id='{{item.solutionId}}' data-index='{{index}}' catchtap='deleteSolution'></image>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <navigator url='/pages/common/collection/index?editType="add"' class='add-solution'>添加方案</navigator>
+</view>

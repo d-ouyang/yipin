@@ -1,0 +1,103 @@
+.mask{
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.error-common{
+  position: absolute; 
+  width: 638rpx;
+  background-color: #fff;
+  border-radius: 24rpx;
+  left: 50%;
+  margin-left: -319rpx; 
+  box-sizing: border-box;
+}
+
+.speech-wrapper{
+  height: 784rpx;
+  top: 50%;
+  margin-top: -392rpx;
+}
+
+.edit-container,.speech-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.edit-title,.speech-title{
+  font-size: 36rpx;
+  color: #000;
+  font-weight: 500;
+  padding-top: 40rpx;
+  margin-bottom: 30rpx;
+}
+
+.edit-detail{
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 0 52rpx;
+}
+.edit-dec,.speech-dec{
+  font-size: 32rpx;
+  color: #353535;
+  margin-bottom: 57rpx;
+}
+
+.speech-entrance,.edit-entrance{
+  position: absolute;
+  right: 28rpx;
+  bottom: 28rpx;
+}
+.speech-entrance image,.edit-entrance image{
+  width: 46rpx;
+  height: 46rpx;
+  vertical-align: middle;
+}
+.speech-dec{
+  box-sizing: border-box;
+  padding: 0 52rpx;
+}
+.record-wrapper{
+  margin-bottom: 102rpx;
+}
+.record-wrapper image{
+  width: 168rpx;
+  height: 168rpx;
+  vertical-align: middle;
+}
+.record-btn-wrapper button{
+  width: 360rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+  line-height: 70rpx;
+  color: #F3453A;
+  background-color: #fff;  
+  font-size: 32rpx;
+  border: 1rpx solid #F3453A;
+  margin-bottom: 32rpx;
+}
+.btn-wrapper button{
+  width: 360rpx;
+  height: 70rpx;
+  border-radius: 10rpx;
+  background-color: #F3453A;
+  color: #fff;
+  font-size: 32rpx;
+  line-height: 70rpx;
+}
+.record-btn-wrapper .recording{
+  color: #fff;
+  background-color: #F3453A;
+}
+.close-wrapper{
+  position: absolute;
+  right: 28rpx;
+  top: 28rpx;
+}

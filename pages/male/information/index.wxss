@@ -1,0 +1,21 @@
+.container {
+  padding: 40rpx 40rpx 100rpx;
+}
+
+.section {
+  font-size: 28rpx;
+}
+
+.section_gap {
+  margin-bottom: 40rpx;
+}
+
+.section__title {
+  margin-bottom: 20rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.btn-area {
+  margin-top: 30rpx;
+}

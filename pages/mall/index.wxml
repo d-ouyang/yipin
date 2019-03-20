@@ -1,0 +1,12 @@
+<view class='container'>
+  <view class='catalog-list'>
+    <block wx:for='{{catalogList}}' wx:key='{{item.catalogId}}'>
+      <d-catalog bindgetGoodsListById='getGoodsListById' item="{{item}}"></d-catalog>
+    </block>
+  </view>
+  <view class='goods-list'>
+    <block wx:for='{{goodsList}}' wx:key='{{item.goodsId}}' >
+      <d-goods bindgetGoodsDetail='getGoodsDetail' bindcollect='bindCollect' item='{{item}}' index="{{index}}" readOnly='{{readOnly}}' />
+    </block>
+  </view>
+</view>

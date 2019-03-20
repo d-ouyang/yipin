@@ -1,0 +1,51 @@
+.pulldown {
+  line-height: 80rpx;
+  font-size: 24rpx;
+  text-align: center;
+  color: #888;
+}
+
+.waiting {
+  line-height: 120rpx;
+  font-size: 30rpx;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.waiting::before {
+  content: '#';
+  font-size: 30rpx;
+  color: #F7291B;
+}
+
+.solution-list {
+  box-sizing: border-box;
+  padding: 0 40rpx;
+}
+
+.solution {
+  box-sizing: border-box;
+  width: 100%;
+  height: 200rpx;
+  padding: 30rpx;
+  background-color: #fff;
+  margin-bottom: 40rpx;
+  border-radius: 8rpx;
+}
+
+.solution-name {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 24rpx;
+}
+
+.solution-desc {
+  font-size: 28rpx;
+  margin-bottom: 24rpx;
+}
+
+.solution-time {
+  font-size: 26rpx;
+  color: #888;
+  text-align: right;
+}

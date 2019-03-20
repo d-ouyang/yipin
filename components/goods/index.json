@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "d-like": "/components/like/index"
+  }
+}

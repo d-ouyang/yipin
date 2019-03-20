@@ -1,0 +1,36 @@
+page {
+  background-color: #F5F6F7;
+  font-size: 32rpx;
+  font-family: PingFangSC,'微软雅黑', Arial, Helvetica, sans-serif;
+}
+
+text, view {
+  line-height: 1.0;
+}
+
+input {
+  border: 0;
+  outline: none;
+}
+
+button::after{
+  border: none;
+}
+
+.no-wrap {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.container {
+  box-sizing: border-box;
+}
+
+.no-data{
+  font-size: 28rpx;
+  line-height: 4.0;
+  margin-top: 60rpx;
+  color: #888;
+  text-align: center;
+}

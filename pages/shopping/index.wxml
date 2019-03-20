@@ -1,0 +1,18 @@
+<wxs src='../../utils/filter.wxs' module='filter' />
+
+<view class='container'>
+  <view class='goods-list'>
+    <block wx:for='{{shoppingCartList}}' wx:key='goodsId' >
+      <view class='goods-item'>
+        <image src='{{item.goodsPicUrl}}'></image>
+        <view class='item-info'>
+          <view class='item-title no-wrap'>{{item.goodsName}}</view>
+          <view class='item-price'>{{filter.returnPrice(item.goodsPrice)}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view bindtap='submitSolution' class='submit-solution'>
+    提交方案
+  </view>
+</view>
